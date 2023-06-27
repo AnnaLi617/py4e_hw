@@ -10,7 +10,7 @@ for line in fh:
     for word in words:
         di[word]=di.get(word,0)+1 
 
-print(di)
+#print(di)
 
 #find the 5 most common words
 lst=[]
@@ -21,6 +21,3 @@ for k,v in di.items():
 
 for v,k in lst[:5]:
     print(k,v)
-
-
-print(lst)
