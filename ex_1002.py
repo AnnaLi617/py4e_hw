@@ -15,8 +15,7 @@ for line in fh:
         #print(line)
         piece=line.split()
         time=piece[5]
-        tpiece=time.split(':')
-        hours=tpiece[0]
+        hours=time.split(':')[0]
         d[hours]=d.get(hours,0)+1
 
 for h,c in sorted(d.items()):
